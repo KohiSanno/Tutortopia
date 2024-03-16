@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="body-container">
+        <div class="header-container">
+            <div class="first-header">
+                <div class="logo">
+                    <img src="logo.png" alt="My Logo">
+                </div>
+
+                
+
+                <div class="second-header"> 
+            
+                    <div class="Button">
+                        <a href = "index.html" id="click">Home</a>
+                    </div>
+    
+                    <div class="Button">
+                        <a href = "page2.html">Programs</a>
+                    </div>
+    
+                    <div class="Button">
+                        <a href = "page3.html">Teachers</a>
+                    </div>
+    
+                    <div class="Button">
+                        <a href = "page4.html">Registration</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+         <!-- Slideshow container -->
+         <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                    <img src="img1.png" alt="Image" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                    <img src="img2.png" alt="Image" style="width:100%">
+            </div>
+        
+            <div class="mySlides fade">
+                     <img src="img3.png" alt="Image" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                    <img src="img4.png" alt="Image" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                    <img src="img5.png" alt="Image" style="width:100%">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+        <!--paragraph-->
+        <div class = "paragraph">
+            <div>
+                <h3><span>Ace the Test: Your One-Stop Shop for SAT, IELTS, and TOEFL Tutoring </span></h3>
+            </div>
+            <div>
+                <p><span>Tutortopia is an institution that is famous worldwide for providing top-quality test preparation courses that cater to the SAT, IELTS, and TOEFL. The institution's team of experienced faculty members is devoted to helping our students unlock their full potential by providing them with rigorous and comprehensive instruction. Tutortopia's programs and courses are specifically designed to meet the diverse learning styles and unique needs of their student body. Whether you are aiming to improve your language skills or preparing for college admissions, our test preparation courses will equip you with the skills and confidence needed for success. For more information about our programs, explore our website and join us in the pursuit of excellence in education.</span></p>
+        
+            </div>
+        </div>
+    </div>
+
+        <!--script for slideshow-->
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            }
+
+        </script>
+
+        
+</body>
+</html>

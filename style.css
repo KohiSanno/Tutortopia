@@ -1,0 +1,459 @@
+
+        body{
+            background-color: lightblue;
+        }
+
+        .body-container{
+                display:flex;
+                flex-direction:column;
+                gap:2rem; /*1 rem = 36px*/
+        }
+
+
+        .first-header {
+            display:flex; /*to put boxes horizontally aka putting elements into flex mode*/
+            /*flex-direction:column-reverse; //puts all the elements vertically in reverse order */
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .logo img {
+             width: 100%;
+             max-width: 300px;
+            margin-top: 0.2px;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*second-header*/
+        .second-header {
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .second-header a
+        {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        #click{
+            background-color: antiquewhite;
+            padding: 5px 15px;
+            border-radius: 15px;
+        }
+
+        /*slide-show*/
+        /* Slideshow container */
+		.slideshow-container {
+			width: 500px;
+			position: relative;
+			margin: auto;
+            height: 300px;
+            
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+			display: none;
+		}
+
+        .mySlides img {
+            max-height: 400px;
+            width: 100%;
+            object-fit: contain;
+        }
+		/* Next and previous buttons */
+		.prev, .next {
+			cursor: pointer;
+			position: absolute;
+			top: 50%;
+			width: auto;
+			margin-top: -22px;
+			padding: 16px;
+			color: white;
+			font-weight: bold;
+			font-size: 18px;
+			transition: 0.6s ease;
+			border-radius: 0 3px 3px 0;
+			user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+			right: 0;
+			border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+			background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+			color: #f2f2f2;
+			font-size: 15px;
+			padding: 8px 12px;
+			position: absolute;
+			bottom: 8px;
+			width: 100%;
+			text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+			color: #f2f2f2;
+			font-size: 12px;
+			padding: 8px 12px;
+			position: absolute;
+			top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+			cursor: pointer;
+			height: 15px;
+			width: 15px;
+			margin: 0 2px;
+			background-color: rgba(0, 0, 0, 0.7);
+			border-radius: 50%;
+			display: inline-block;
+			transition: background-color 0.6s ease;
+            z-index: 99999;
+            position: relative;
+
+		}
+
+		.active, .dot:hover {
+			background-color: grey;
+		}
+
+		/* Fading animation */
+		.fade {
+			-webkit-animation-name: fade;
+			-webkit-animation-duration: 1.5s;
+			animation-name: fade;
+			animation-duration: 1.5s;
+		}
+
+        @-webkit-keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+        @keyframes fade {
+			from {opacity: .4}
+			to {opacity: 1}
+		}
+      
+
+        /*paragraph*/
+
+        .paragraph {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .paragraph div:nth-child(1) {
+            text-align: left;
+        }
+
+        .paragraph div:nth-child(2) {
+            text-align: right;
+        }
+
+        /*second page*/
+        .firstrowofimgs,
+        .secondrowofimgs
+        {
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .secondpage-img6,
+        .secondpage-img7,
+        .secondpage-img8,
+        .secondpage-img9,
+        .secondpage-img10,
+        .secondpage-img11
+         {
+
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin-right: 20px; 
+        }
+
+        .image-container {
+            text-align: center;
+            margin-bottom: -215px;
+        }
+
+        .image-container p {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin-right: 20px; 
+        }
+
+        .firstrowofpar,
+        .secondrowofpar
+         {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start; /* Adjust alignment as needed */
+        }
+
+        .par-container {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin-right: 20px; 
+        }
+
+
+        /*page 3*/
+
+        .first-header {
+            display:flex; /*to put boxes horizontally aka putting elements into flex mode*/
+            /*flex-direction:column-reverse; //puts all the elements vertically in reverse order */
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+
+        .logo img {
+             width: 100%;
+             max-width: 300px;
+            margin-top: 0.2px;
+        }
+
+        
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+         /*second-header*/
+         .second-header {
+            padding: 10px;
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .second-header a
+        {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        #click{
+            background-color: antiquewhite;
+            padding: 5px 15px;
+            border-radius: 15px;
+        }
+
+        .table-container1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+        }
+
+        table {
+            width: 60%;
+            table-layout: fixed;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+
+        table td {
+            text-align: center;
+            border: 1px solid black;
+        }
+
+        table img {
+            width: 100%;
+            
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            overflow: auto;
+        }
+
+        .lightbox-image {
+            display: block;
+            max-width: 90%;
+            max-height: 90%;
+            margin: auto;
+            margin-top: 5%;
+        }
+
+        /*page 4*/
+
+        .second-header ab
+        {
+            color: black;
+            text-decoration: none;
+        }
+
+
+        #click{
+            background-color: antiquewhite;
+            padding: 5px 15px;
+            border-radius: 15px;
+        }
+
+        .title {
+            display: flex;
+            justify-content:left;
+            height: 10vh;
+            align-items: flex-end; 
+            margin-top: 0;
+        }
+
+        .table-container {
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            height: 90vh;
+            margin-top: 0;
+        }
+
+        .form-container {
+            width: 400px;
+            padding: 20px;
+            background-color: lightgray;
+            border: 1px solid gray;
+            border-radius: 5px;
+            margin: 0 auto;
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .form-container label,
+        .form-container input,
+        .form-container select,
+        .form-container textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .video-form-container {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .video-container {
+            flex:1;
+        }
+
+        .form-container input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-wrapper input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .last-container {
+            display:flex; 
+            flex-direction: row;
+            justify-content:center;
+            align-items:center;
+            position: relative;
+        }
+
+        .last-text {
+            text-align: center;
+            margin-right: 380px; 
+        }
+
+        .last-form {
+            margin-left: -100px; 
+        }
+
+        .radio-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .radio-container input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        .arrow {
+            width: 40px; /* Increase the width to make the arrow bigger */
+            height: 40px; /* Increase the height to make the arrow bigger */
+            position: absolute;
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+
+        .last-form .radio-container {
+            margin-right: 10px; /* Add some spacing between radio buttons */
+        }
+
+
+        .arrow svg {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .parapara
+        {
+            background-image: url("green-background.jpg");
+        }
+

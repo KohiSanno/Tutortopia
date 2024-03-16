@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="body-container">
+        <div class="header-container">
+            <div class="first-header">
+                <div class="logo">
+                    <img src="logo.png" alt="My Logo">
+                </div>
+
+
+                <div class="second-header"> 
+            
+                    <div class="Button">
+                        <a href = "index.html">Home</a>
+                    </div>
+    
+                    <div class="Button">
+                        <a href = "page2.html">Programs</a>
+                    </div>
+    
+                    <div class="Button">
+                        <a href = "page3.html">Teachers</a>
+                    </div>
+    
+                    <div class="Button" id = "click">
+                        <a href = "page4.html">Registration</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--starts here-->
+
+        <div class="title">
+            <h1><b>Start Today and unlock your potential with us!</b></h1>
+        </div>
+
+    <div class ="video-form-container">
+        <div class="video-container">
+        <div class ="table-container">
+        <video src= "video.mov" poster="img19.png" width="640" height="480" controls>
+            Your browser does not support the video tag.
+        </video>
+        </div>
+    </div>
+
+        <!--sign up sheet-->
+        <div class="form-container">
+            <h1>Sign-Up Sheet</h1>
+    
+            <form action="mailto:cocokohiro@gmail.com" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+    
+                <label for="schoolname">School name:</label>
+                <input type="text" id="schoolname" name="schoolname" required>
+    
+                <label for="nameoftheprogram">Name of the program:</label>
+                <input type="text" id="nameoftheprogram" name="nameoftheprogram" required>
+
+                <label for="preferredinstructor">Preferred Instructor/Teacher:</label>
+                <input type="text" id="preferredinstructor" name="preferred instructor/teacher" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="email">Phone number:</label>
+                <input type="number" id="phonenumber" name="phone number" required>
+
+                <div class="checkbox-wrapper">
+                    <input type="checkbox" id="signupCheckbox" name="signupCheckbox">
+                    <label for="signupCheckbox">Sign up to have daily mail from Tutortopia?</label>
+                </div>
+    
+                <input type="submit" value="Submit">
+            </form>
+        </div>                 
+    </div>
+
+    <div class ="last-container">
+        <div class ="last-text">
+            <h1><b>We'd love to hear your thoughts.<br>
+               Rate this webpage!</b>
+            </h1>
+        </div>
+
+        <div class = "arrow">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+        </svg>
+        </div>
+        <div class = "last-form">
+            <form>
+                <div class="radio-container">
+                  <label>
+                    <input type="radio" name="rating" value="1">
+                    1 - Excellent 
+                  </label>
+                </div>
+                <div class="radio-container">
+                  <label>
+                    <input type="radio" name="rating" value="2">
+                    2 - Good
+                  </label>
+                </div>
+                <div class="radio-container">
+                  <label>
+                    <input type="radio" name="rating" value="3">
+                    3 - Fair
+                  </label>
+                </div>
+                <div class="radio-container">
+                  <label>
+                    <input type="radio" name="rating" value="4">
+                    4 - Bad
+                  </label>
+                </div>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function sendFormEmail() {
+        var name = document.getElementById('name').value;
+        var age = document.getElementById('age').value;
+        var schoolname = document.getElementById('schoolname').value;
+
+        alert("message");
+        var mailtoLink = 'mailto:cocokohiro@gmail.com?subject=Form Submission&body=Name: ' + name + '%0D%0AEmail: ' + age + '%0D%0AMessage: ' + schoolname;
+      
+        window.location.href = mailtoLink;
+      }
+    </script>
+</body>
+</html>
